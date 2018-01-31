@@ -1,12 +1,10 @@
 class MercuryController < ActionController::Base
   include ::Mercury::Authentication
 
-  protect_from_forgery
-  before_action :authenticate, :only => :edit
   layout false
 
   def edit
-    render :text => '', :layout => 'mercury'
+    render :plain => '', :layout => 'mercury'
   end
 
   def resource
