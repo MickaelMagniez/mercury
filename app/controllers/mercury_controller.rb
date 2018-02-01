@@ -4,7 +4,7 @@ class MercuryController < ActionController::Base
   layout false
 
   def edit
-    render :plain => '', :layout => 'mercury'
+    render :text => '', :layout => 'mercury'
   end
 
   def resource
